@@ -14,6 +14,9 @@ var translator = (function() {
     getOutputSelected: function() {
       return outputSelected;
     },
+    getInputString: function() {
+      return inputString;
+    },
     getArray: function() {
       return inputArray;
     },

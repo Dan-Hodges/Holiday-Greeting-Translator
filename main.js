@@ -1,13 +1,19 @@
 var translator = (function() {
-  var inputArray = [], inputString, translatedString;
+  var inputArray = [], inputString, translatedString, outputSelected;
 
   $('#submitBtn').click(function() {
     inputString = $("#translateField").val()
     inputArray = inputString.split(" ");
     console.log(inputArray);
+    outputSelected = $('option:selected').attr('id');
+    console.log(outputSelected);
   });
 
   return {
+
+    getOutputSelected: function() {
+      return outputSelected;
+    },
     getArray: function() {
       return inputArray;
     },
@@ -21,3 +27,6 @@ var translator = (function() {
   };
 
 })();
+
+
+

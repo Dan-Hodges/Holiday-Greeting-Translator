@@ -1,25 +1,23 @@
-var translator = (function(inputValue) {
-  var inputText =[];
-  var myArray = [];
-  
+var translator = (function() {
+  var inputArray = [], inputString, translatedString;
+
+  $('#submitBtn').click(function() {
+    inputString = $("#translateField").val()
+    inputArray = inputString.split(" ");
+    console.log(inputArray);
+  });
+
   return {
-    lastLandedOn: new Date(),
-    addSpacecraft: function(spacecraft) {
-      activeSpacecraft.push(spacecraft)
+    getArray: function() {
+      return inputArray;
     },
-    getSpacecraft: function() {
-      return activeSpacecraft;
+    getTranslatedString: function() {
+      return translatedString;
     },
-    setPlanetsLandedOn: function(count) {
-      planetsLandedOn = count;
-    },
-    getPlanetsLandedOn: function() {
-      return planetsLandedOn;
-    },
-    getPlanets: function() {
-      return planets;
-    }
-  
+    setTranslatedString: function() {
+      return translatedString;
+    } 
+
   };
 
 })();

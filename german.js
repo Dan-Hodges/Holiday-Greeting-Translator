@@ -33,7 +33,7 @@ var germanTranslator = function(translator) {
 			}
 			
 			if (inputArray[i] === "happy") {
-				germanArray.push("glückliches");
+				germanArray.push("gluckliches");
 			}
 			
 			if (inputArray[i] === "new") {

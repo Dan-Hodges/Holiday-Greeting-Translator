@@ -36,8 +36,20 @@ var translator = (function() {
     };
 
     hungarianString = hungarianArray.join(" ");
-    console.log(hungarianString);
-    $("#translation").text(hungarianString); 
+    
+    if (outputSelected === 'german') {
+      $("#translation").text(translator.german());
+      console.log("german selected translation");
+    }
+    if (outputSelected === 'spanish') {
+      $("#translation").text(translator.spanish());
+      console.log("spanish selected translation");
+    }
+    if (outputSelected === 'hungarian') {
+      $("#translation").text(hungarianString);
+      console.log("hungarian selected translation");
+    }
+
   });
 
   return {

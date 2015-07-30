@@ -44,11 +44,10 @@ var germanTranslator = function(translator) {
 				germanArray.push("Jahr");
 			}
 
-      }
+	      }
       	germanString = germanArray.join(" ");
       	return germanString;
 
     }
   return translator;
 }(translator);
-// haben ein frohes Weihnachtsfest und ein glückliches neues Jahr

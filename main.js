@@ -5,6 +5,7 @@ var translator = (function() {
     inputString = $("#translateField").val();
     inputString = inputString.toLowerCase();
     inputArray = inputString.split(" ");
+    //console.log("inputArray", inputArray);
     outputSelected = $('option:selected').attr('id');
 
     for (var i = 0; i < inputArray.length; i++) {
@@ -15,22 +16,22 @@ var translator = (function() {
         hungarianArray.push("egy");
       }
       if (inputArray[i] === "merry") {
-        hungarianArray.push("vidám");
+        hungarianArray.push("vidam");
       }
       if (inputArray[i] === "christmas") {
-        hungarianArray.push("Karácsony");
+        hungarianArray.push("Karacsony");
       }
       if (inputArray[i] === "and") {
-        hungarianArray.push("és");
+        hungarianArray.push("es");
       }
       if (inputArray[i] === "happy") {
         hungarianArray.push("boldog");
       }
       if (inputArray[i] === "new") {
-        hungarianArray.push("új");
+        hungarianArray.push("uj");
       }
       if (inputArray[i] === "year") {
-        hungarianArray.push("év");
+        hungarianArray.push("ev");
       }
     };
 

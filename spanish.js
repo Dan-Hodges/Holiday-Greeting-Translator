@@ -1,15 +1,15 @@
 var spanishTranslator = function(translator) {
     
-   translator.spanish = function() {
-   	var inputString = translator.getInputString();
-   	var inputArray = [];
-   	var $dom = $('#translation');
-   	var spanishArray = [];
-    var spanishString;
-    inputString = inputString.toLowerCase();
-    inputArray = inputString.split(" ");
+ translator.spanish = function() {
+ 	var inputString = translator.getInputString();
+ 	var inputArray = [];
+ 	var $dom = $('#translation');
+ 	var spanishArray = [];
+  var spanishString;
+  inputString = inputString.toLowerCase();
+  inputArray = inputString.split(" ");
 
-	for (var i = 0; i < inputArray.length; i++) {
+    for (var i = 0; i < inputArray.length; i++) {
       if (inputArray[i] === "have") {
         spanishArray.push("Tengan");
       }
@@ -29,16 +29,17 @@ var spanishTranslator = function(translator) {
         spanishArray.push("feliz");
       }
       if (inputArray[i] === "new") {
-        spanishArray.push("año");
+        spanishArray.push("ano");
       }
       if (inputArray[i] === "year") {
         spanishArray.push("nuevo");
       }
-      
-		}
-spanishString = spanishArray.join(" ");
+    }
+
+  spanishString = spanishArray.join(" ");
   return spanishString;
-	}
+
+  }
+  
   return translator;
-    
 }(translator);

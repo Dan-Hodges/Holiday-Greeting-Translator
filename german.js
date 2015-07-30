@@ -49,12 +49,6 @@ var germanTranslator = function(translator) {
       	return germanString;
 
     }
-
-
-
-
   return translator;
-    
-
 }(translator);
 // haben ein frohes Weihnachtsfest und ein glückliches neues Jahr

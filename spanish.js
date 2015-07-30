@@ -5,11 +5,9 @@ var spanishTranslator = function(translator) {
    	var inputArray = [];
    	var $dom = $('#translation');
    	var spanishArray = [];
-    inputstring = inputstring.toLowerCase();
+    var spanishString;
+    inputString = inputString.toLowerCase();
     inputArray = inputString.split(" ");
-   }
-
-
 
 	for (var i = 0; i < inputArray.length; i++) {
       if (inputArray[i] === "have") {
@@ -25,7 +23,7 @@ var spanishTranslator = function(translator) {
         spanishArray.push("Navidad");
       }
       if (inputArray[i] === "and") {
-        spanishnArray.push("y");
+        spanishArray.push("y");
       }
       if (inputArray[i] === "happy") {
         spanishArray.push("feliz");
@@ -36,12 +34,10 @@ var spanishTranslator = function(translator) {
       if (inputArray[i] === "year") {
         spanishArray.push("nuevo");
       }
-
+      
 		}
-
 spanishString = spanishArray.join(" ");
-return spanishString;
-
+  return spanishString;
 	}
   return translator;
     

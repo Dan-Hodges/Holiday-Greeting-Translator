@@ -5,7 +5,6 @@ var translator = (function() {
     inputString = $("#translateField").val();
     inputString = inputString.toLowerCase();
     inputArray = inputString.split(" ");
-    //console.log("inputArray", inputArray);
     outputSelected = $('option:selected').attr('id');
 
     for (var i = 0; i < inputArray.length; i++) {

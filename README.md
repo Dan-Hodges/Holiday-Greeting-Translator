@@ -1,5 +1,20 @@
-# Holiday-Greeting-Translator
-This app was built as a group activity at NSS. Upon entering a simple holiday greeting, the user is shown the greeting in one of four languages.  
+# Holiday Translation App
+#### This is a holiday greeting translation app created as part of a NSS group project by Dan-Hodges, SethDorris, and Austinscott3573.
+####Functionality:
+* Accepts user input
+* Accepts user language of choice
+* Handles click event on submit button
+  * Uses jQuery to collect input 
+  * Determine correct language 
+  * Place translated text in the DOM
+  * Show hidden DOM element with the text
+  
+####Future Functionality
+* Aditional supported languages (currently Spanish, Italian, and French are supported)
+* Extend the realm of vocabulary beyond the holiday basics
+* Uses new HTML5 text to speech to read the translation in an accent of that language
+
+#Instructions
 
 Represent a small bilingual lexicon as a Javascript object (see example below) and use it to translate a holiday card message from English into another language. Each member of the team will build a JavaScript module that will convert text entered into an input field to the language that they choose.
 
